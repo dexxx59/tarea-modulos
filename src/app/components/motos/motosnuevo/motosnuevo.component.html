@@ -1,0 +1,19 @@
+<form>
+    <div class="bd-example">
+        <div class="form-floating mb-3">
+            <input name="modelo" type="text" [(ngModel)]="item.modelo" class="form-control" id="modeloInput" placeholder="Modelo moto">
+            <label for="modeloInput">Modelo moto</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="marca" type="text" [(ngModel)]="item.marca" class="form-control" id="marcaInput" placeholder="Marca moto">
+            <label for="marcaInput">Marca moto</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="matricula" type="text" [(ngModel)]="item.matricula" class="form-control" id="matriculaInput" placeholder="Matricula moto">
+            <label for="matriculaInput">Matricula moto</label>
+        </div>
+    </div>
+    <button type="button" (click)="salir()" class="btn btn-warning">Cancelar</button>
+    <button type="button" (click)="enviar()" class="btn btn-success">Guardar</button>
+
+</form>
