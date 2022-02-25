@@ -6,6 +6,9 @@ import { ProductonuevoComponent } from "src/app/components/producto/productonuev
 import { ClientesComponent } from "src/app/components/clientes/clientes.component";
 import { MotosComponent } from "src/app/components/motos/motos.component";
 import { MotosnuevoComponent } from "src/app/components/motos/motosnuevo/motosnuevo.component";
+import { UsuarioComponent } from "src/app/components/usuario/usuario.component";
+import { UsuarionuevoComponent } from "src/app/components/usuario/usuarionuevo/usuarionuevo.component";
+import { PedidoComponent } from "src/app/components/pedido/pedido.component";
 //export 
 const AdminLayoutRoutes:Routes=[
     {
@@ -38,6 +41,24 @@ const AdminLayoutRoutes:Routes=[
         path:'motosform/:id',
         component:MotosnuevoComponent //editar
     },
+    {
+        path:'usuario',
+        component:UsuarioComponent //listar
+    },
+    {
+        path:'usuarioform',
+        component:UsuarionuevoComponent //crear nuevo
+    },
+    {
+        path:'usuarioform/:id',
+        component:UsuarionuevoComponent //editar
+    },
+   
+    {
+        path:'pedido',
+        component:PedidoComponent //listar
+    },
+    
     
     
 

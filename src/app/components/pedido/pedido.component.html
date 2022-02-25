@@ -1,0 +1,18 @@
+<form class="d-flex">
+    <input name="search" [(ngModel)]="search" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    <button (click)="buscar()" class="btn btn-outline-success" type="submit">Buscar</button>
+</form>
+<table>
+    <tr>
+        <th>Producto</th>
+        <th>Fecha</th>
+        <th>Total</th>
+
+    </tr>
+    <tr *ngFor="let item of lista">
+        <td>{{item.producto}}</td>
+        <td>{{item.fecha}}</td>
+        <td>{{item.total}}</td>
+
+    </tr>
+</table>

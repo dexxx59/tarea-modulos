@@ -16,13 +16,17 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { MotosComponent } from './components/motos/motos.component';
 import { MotosnuevoComponent } from './components/motos/motosnuevo/motosnuevo.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarionuevoComponent } from './components/usuario/usuarionuevo/usuarionuevo.component';
+import { PedidoComponent } from './components/pedido/pedido.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductonuevoComponent,
     ClientesComponent,
-    
+    PedidoComponent,
+  
   ],
   imports: [
     BrowserModule,
